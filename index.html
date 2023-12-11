@@ -64,15 +64,15 @@
 
     <div class="form-field-cardnumber">
       <label for="Cardholder-number">Card Number</label><br>
-      <input type="text" name="Cardholder-number" placeholder="e.g. 1234 5678 9123 0000" class="form-field" id="Cardholder-number" onkeyup="handleKeypress('Cardholder-number', 'cardNumber', formatCardNumber)">
+      <input type="text" name="Cardholder-number" placeholder="e.g. 1234 5678 9123 0000" class="form-field" id="Cardholder-number" onkeyup="handleKeypress('Cardholder-number', 'cardNumber', formatCardNumber)" maxlength="16">
       <p id="CardNumberErr"></p>
     </div>
     
     <div class="form-field-group">
       <div class="exp-date">
         <label for="Cardholder-exp">Exp. Date (MM/YY)</label><br>
-        <input type="text" name="Cardholder-exp" placeholder="MM" class="form-field-date" id="CardExpMM" onkeyup="handleKeypress('CardExpMM', 'cardExp-mm')">
-        <input type="text" name="Cardholder-exp" placeholder="YY" class="form-field-date" id="CardExpYY" onkeyup="handleKeypress('CardExpYY', 'cardExp-yy')">
+        <input type="text" name="Cardholder-exp" placeholder="MM" class="form-field-date" id="CardExpMM" onkeyup="handleKeypress('CardExpMM', 'cardExp-mm')" maxlength="2">
+        <input type="text" name="Cardholder-exp" placeholder="YY" class="form-field-date" id="CardExpYY" onkeyup="handleKeypress('CardExpYY', 'cardExp-yy')" maxlength="2">
         <p id="CardExpErr"></p>
       </div>
 
